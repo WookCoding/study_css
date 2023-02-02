@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position 실습</title>
+    <style>
+        div.img {
+            top: 13px;
+            position: relative;
+            background-image: url("http://koreaitacademy.com/renewal2021/img/tch/teacher007.png");
+            background-size: 100%;
+            background-position: center;
+            width: 200px;
+            height: 315px;
+            margin: 0 auto;
+            background-repeat: no-repeat;
+        }
+
+        .sungrass {
+            width: 100px;
+            position: absolute;
+            left: 28px;
+            top: 75px;
+        }
+
+        .tabaco {
+            width: 40px;
+            position: absolute;
+            top: 130px;
+            left: 40px;
+        }
+        
+        .gun {
+            transform:rotate(120deg);
+            width: 300px;
+            position: absolute;
+            top: 130px;
+            left: -50px;
+        }
+
+        .helmet {
+            width: 133px;
+            position: absolute;
+            top: 3px;
+            left: 16px;
+        }
+
+        .background{
+            position: relative;
+            background-image: url("hell.jpg");
+            background-size: 100%;
+            width: 500px;
+            height: 315px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="img">
+            <img class= "sungrass" src="sungrass.png">
+            <img class= "tabaco" src="tabaco.png">
+            <img class="gun" src="gun.png">
+            <img class="helmet" src="helmet.png">
+        </div>
+    </div>
+</body>
+</html>
