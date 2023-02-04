@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(클론코딩)마켓컬리-회원가입 페이지</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/joinPage.css">
+</head>
+<body>
+    <div class ="layout">
+        <div class ="title">회원가입</div>
+        <div class ="body-layout">
+            <div class ="body-title-layout">
+                <span class="star">*</span>
+                 필수입력사항
+            </div>
+            <div class ="info-padding">
+                <!-- 아이디 입력창 -->
+                <div class ="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            아이디<span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class="input-box-padding">
+                            <div class="input-box-position">
+                                <input type="text" id="userIdentification" class ="input-text" placeholder="아이디를 입력해주세요">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="check-box">
+                        <button type="button" class ="check-box-button">
+                            <span class="span-font">중복확인</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- 비밀번호 입력 창 -->
+                <div class="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            비밀번호<span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class="input-box-padding">
+                            <div class="input-box-position">
+                                <input type="password" id="userPassword" class ="input-text" placeholder="비밀번호를 입력해주세요">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="check-box"></div>
+                </div>
+                <!-- 비빌번호 확인 창 -->
+                <div class="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            비밀번호확인<span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class="input-box-padding">
+                            <div class="input-box-position">
+                                <input type="password" id="userPasswordCheck" class ="input-text" placeholder="비밀번호를 한번 더 입력해주세요">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="check-box"></div>
+                </div>
+                <!-- 이름 입력 창 -->
+                <div class="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            이름<span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class="input-box-padding">
+                            <div class="input-box-position">
+                                <input type="text" id="userName" class ="input-text" placeholder="이름을 입력해 주세요">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="check-box"></div>
+                </div>
+                <!-- 이메일 입력창 -->
+                <div class ="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            이메일<span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class="input-box-padding">
+                            <div class="input-box-position">
+                                <input type="text" id="userIdentification" class ="input-text" placeholder="예:marketkurly@kurly.com">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="check-box">
+                        <button type="button" class ="check-box-button">
+                            <span class="span-font">중복확인</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- 휴대폰 -->
+                <div class ="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            휴대폰<span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class="input-box-padding">
+                            <div class="input-box-position">
+                                <input type="text" id="userIdentification" class ="input-text" placeholder="숫자만 입력해주세요.">
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="check-box">
+                        <button type="button" class ="check-box-button" disabled>
+                            <span class="span-font">인증번호 받기</span>
+                        </button>
+                    </div>
+                </div>
+                <!-- 주소 검색 입력창 -->
+                <div class ="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            주소<span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <button type="button" class="address-button" height="44" radius="4">
+                            <span class ="span-font">
+                                <img src="https://res.kurly.com/pc/service/cart/2007/ico_search.svg" class ="address-icon">주소 검색
+                            </span>
+                        </button>
+                        <span class="warring-message">배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
+                    </div>
+                    <div class ="check-box"></div>
+                </div>
+                <!-- 성별 선택 창 -->
+                <div class ="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            성별
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class ="radio-box">
+                            <label class ="gender-box-label" for="gender-man">
+                                <input type="radio" class ="label-radio" id="gender-man" name="gender">
+                                <span class="label-radio-span-active">
+                                    <div class="label-radio-span-div"></div>
+                                </span>
+                                <span class ="gender-man-span">남자</span>
+                            </label>
+                            <label class ="gender-box-label" for="gender-women">
+                                <input type="radio" class ="label-radio" id="gender-women" name="gender">
+                                <span class="label-radio-span">
+                                    <div class="label-radio-span-div"></div>
+                                </span>
+                                <span class ="gender-man-span">여자</span>
+                            </label>
+                            <label class ="gender-box-label" for="gender-none">
+                                <input type="radio" class ="label-radio" id="gender-none" name="gender">
+                                <span class="label-radio-span">
+                                    <div></div>
+                                </span>
+                                <span class ="gender-man-span">선택안함</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class ="check-box"></div>
+                </div>
+                <!-- 생년 월일 입력창 -->
+                <div class ="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            생년월일
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class ="birth-box">
+                            <div class ="input-box-padding">
+                                <div class="birth-input-layout">
+                                    <input type="text" placeholder="YYYY" height="40" class="birth-input-text">
+                                </div>
+                            </div>
+                            <span class="birth-span"></span>
+                            <div class ="input-box-padding">
+                                <div class="birth-input-layout">
+                                    <input type="text" placeholder="MM" height="40" class="birth-input-text">
+                                </div>
+                            </div>
+                            <span class="birth-span"></span>
+                            <div class ="input-box-padding">
+                                <div class="birth-input-layout">
+                                    <input type="text" placeholder="DD" height="40" class="birth-input-text">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class ="check-box"></div>
+                </div>
+                <!-- 추가입력 사항 -->
+                <div class ="info-layout">
+                    <div class ="info-title">
+                        <label class ="info-title-label">
+                            추가입력 사항
+                        </label>
+                    </div>
+                    <div class ="input-box">
+                        <div class="radio-box">
+                            <label class ="gender-box-label" for="additional-recommender">
+                                <input type="radio" class ="label-radio" id="additional-recommender" name="additional">
+                                <span class="label-radio-span-active">
+                                    <div class="label-radio-span-div"></div>
+                                </span>
+                                <span class ="gender-man-span">친구초대 추천인 아이디</span>
+                            </label>
+                            <label class ="gender-box-label" for="additional-event">
+                                <input type="radio" class ="label-radio" id="additional-event" name="additional">
+                                <span class="label-radio-span">
+                                    <div class="label-radio-span-div"></div>
+                                </span>
+                                <span class ="gender-man-span">참여 이벤트명</span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class ="check-box"></div>
+                </div>
+                <div class ="body-footer"></div>
+            </div>
+            <div class="info-padding">
+                <div class="select-layout">
+                    <div class="select-layout-box">
+                        <label class="info-title-label">
+                            이용약관동의
+                            <span class="star">*</span>
+                        </label>
+                    </div>
+                    <div class="input-box">
+                        <div class="input-checkbox">
+                            <div class="checkbox-info">
+                                <label class="input-checkbox-label" for="TermsAgreeAll">
+                                    <input type="checkbox" id="TermsAgreeAll" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>전체 동의합니다.</span>
+                                </label>
+                            </div>    
+                            <p class="checkbox-warring-message">
+                                선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.
+                            </p>
+                        </div>
+                        <div class="input-checkbox">
+                            <div class="checkbox-info">
+                                <label class="checkbox-info-label" for="RequiredTermsCondition">
+                                    <input type="checkbox" id="RequiredTermsCondition" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>이용약관 동의</span>
+                                </label>
+                                <span class="checkbox-info-essential">(필수)</span>
+                            </div>
+                            <a class="checkbox-agree-url" href="">약관 보기</a>
+                        </div>
+                        <div class="input-checkbox">
+                            <div class="checkbox-info">
+                                <label class="checkbox-info-label" for="RequiredTermsCondition">
+                                    <input type="checkbox" id="RequiredTermsCondition" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>개인정보 수집∙이용 동의</span>
+                                </label>
+                                <span class="checkbox-info-essential">(필수)</span>
+                            </div>
+                            <a class="checkbox-agree-url" href="">약관 보기</a>
+                        </div>
+                        <div class="input-checkbox">
+                            <div class="checkbox-info">
+                                <label class="checkbox-info-label" for="RequiredTermsCondition">
+                                    <input type="checkbox" id="RequiredTermsCondition" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>개인정보 수집∙이용 동의</span>
+                                </label>
+                                <span class="checkbox-info-essential">(선택)</span>
+                            </div>
+                            <a class="checkbox-agree-url" href="">약관 보기</a>
+                        </div>
+                        <div class="receive-flex">
+                            <div class="checkbox-info">
+                                <label class="checkbox-info-label" for="RequiredTermsCondition">
+                                    <input type="checkbox" id="RequiredTermsCondition" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>무료배송, 할인쿠폰 등 혜택/정보 수신 동의</span>
+                                </label>
+                                <span class="checkbox-info-essential">(선택)</span>
+                            </div>
+                            <div class ="receive-agree-layout">
+                                <label class="receive-agree-label" for="OptionalTermsOfSms">
+                                    <input type="checkbox" id="OptionalTermsOfSms" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>SMS</span>
+                                </label>
+                                <label class="receive-agree-label" for="OptionalTermsOfMailing">
+                                    <input type="checkbox" id="OptionalTermsOfMailing" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>이메일</span>
+                                </label>
+                            </div>
+                            <div class="receive-agree-layout">
+                                <p class="receive-agree-event">
+                                    동의 시 한 달간 [5%적립] + [2만원 이상 무료배송] 첫 주문 후 안내
+                                </p>
+                            </div>
+                        </div>
+                        <!-- d -->
+                        <div class="input-checkbox">
+                            <div class="checkbox-info">
+                                <label class="checkbox-info-label" for="RequiredTermsCondition">
+                                    <input type="checkbox" id="RequiredTermsCondition" class="checkbox">
+                                    <img class="checkbox-image"src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPGcgc3Ryb2tlPSIjREREIj4KICAgICAgICAgICAgPGc+CiAgICAgICAgICAgICAgICA8Zz4KICAgICAgICAgICAgICAgICAgICA8ZyB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNjY5LjAwMDAwMCwgLTEwOTAuMDAwMDAwKSB0cmFuc2xhdGUoMTAwLjAwMDAwMCwgOTM2LjAwMDAwMCkgdHJhbnNsYXRlKDU1My4wMDAwMDAsIDE0Mi4wMDAwMDApIHRyYW5zbGF0ZSgxNi4wMDAwMDAsIDEyLjAwMDAwMCkiPgogICAgICAgICAgICAgICAgICAgICAgICA8Y2lyY2xlIGN4PSIxMiIgY3k9IjEyIiByPSIxMS41Ii8+CiAgICAgICAgICAgICAgICAgICAgICAgIDxwYXRoIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLXdpZHRoPSIxLjUiIGQ9Ik03IDEyLjY2N0wxMC4zODUgMTYgMTggOC41Ii8+CiAgICAgICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICAgICAgPC9nPgogICAgICAgICAgICA8L2c+CiAgICAgICAgPC9nPgogICAgPC9nPgo8L3N2Zz4K">
+                                    <span>본인은 만 14세 이상입니다.</span>
+                                </label>
+                                <span class="checkbox-info-essential">(필수)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="join-btn-layout">
+                <button type="submit" class="join-btn">
+                    <span class="span-font">가입하기</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+<script>
+    
+</script>
+</html>

@@ -1,0 +1,162 @@
+body {
+    font-size: 14px;
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+a {
+    background-color: transparent;
+    text-decoration: none;
+    color: inherit;
+}
+
+*, ::after, ::before, legend, td, th {
+    padding: 0;
+}
+
+*, ::after, ::before {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+button, input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+}        
+
+button {
+    overflow: visible;
+    background-color: transparent;
+    border: none;
+}
+
+button {
+    text-transform: none;
+}
+
+input::placeholder{
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.wrap {
+    min-width: 1050px;
+    padding: 50px 0px;
+    background-color: white;
+}
+
+.find-id-title {
+    padding-bottom: 30px;
+    font-weight: 500;
+    font-size: 28px;
+    text-align: center;
+}
+
+.find-id-box {
+    max-width: 400px;
+    padding: 0px 10px 6px;
+    margin: auto;
+    position: relative;
+    background-color: white;
+}
+
+.find-wqy-box {
+    background-color: white;
+    padding: 0px 15px;
+    margin: 0px;
+    box-shadow: rgb(221 221 221) 0px -0.5px 0px 0px inset;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+}
+
+.find-way {
+    display: block;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    position: relative;
+    height: 48px;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(102, 102, 102);
+    line-height: 18px;
+}
+
+.find-way-active {
+    display: block;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    position: relative;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    color: rgb(95, 0, 128);
+    line-height: 18px;
+    box-shadow: rgb(95 0 128) 0px -2px 0px 0px inset;
+}
+
+.info-layout {
+    padding: 24px 20px;
+}
+
+.info-box {
+    padding-bottom: 12px
+}
+
+.info-box-label {
+    display: inline-block;
+    padding: 8px 0px 11px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    color: rgb(51, 51, 51);
+}
+
+.info-input-layout {
+    position: relative;
+    height: 48px;
+}
+
+.info-input {
+    width: 100%;
+    height: 46px;
+    padding: 0px 11px 1px 15px;
+    border-radius: 4px;
+    border: 1px solid rgb(221, 221, 221);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    color: rgb(51, 51, 51);
+    outline: none;
+    box-sizing: border-box;
+}
+
+.find-button-layout {
+    margin-top: 18px;
+}
+
+.span-font {
+    display: inline-block;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.find-button {
+    display: block;
+    padding: 0px 10px;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
+    height: 52px;
+    border-radius: 4px;
+    color: rgb(255, 255, 255);
+    /* background-color: rgb(95, 0, 128); */
+    background-color: rgb(221, 221, 221);
+    border: 0px none;
+}
+
+/* .find-button:disabled {
+    background-color: rgb(221, 221, 221);
+} */
