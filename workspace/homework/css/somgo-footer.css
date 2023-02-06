@@ -1,0 +1,271 @@
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+.footer-container {
+    background: #fff;
+    border-top: 0.0625rem solid #e1e1e1;
+    padding: 1.3125rem 0 2.5rem;
+}
+
+.footer-row {
+    display: block;
+    max-width: 60.625rem;
+    padding: 0;
+}
+
+.footer-media-container {
+    width: 100%;
+    padding-right: 0.9375rem;
+    padding-left: 0.9375rem;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.footer-row .footer-content {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-row .footer-margin {
+    margin-bottom: 1.875rem;
+}
+
+.footer-container .text {
+    margin: 0;
+    font-size: .75rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+}
+
+.footer-container .footer-row p.info-number {
+    padding-bottom: 0.1875rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    font-stretch: normal;
+    color: #00c7ae;
+}
+
+.footer-container .info-guide {
+    margin: 0;
+    font-size: .875rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+    padding-bottom: 1.875rem;
+}
+
+.right {
+    float: right;
+}
+
+.footer-row .footer-content .download {
+    display: inline-block;
+    width: 6.3rem;
+    height: 2.25rem;
+    background-color: #00c7ae;
+    border-radius: 1.28125rem;
+    color: #fff;
+    font-size: .75rem;
+    font-weight: 500;
+    line-height: 2.25rem;
+    letter-spacing: normal;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 0.5rem;
+    text-align: center;
+    border: none;
+}
+
+.footer-row .footer-content .download:last-child {
+    margin: 0;
+}
+
+.footer-row .footer-content .download img {
+    padding-right: 0.375rem;
+    margin-top: -0.125rem;
+}
+
+.footer-content-list {
+    margin-bottom: 0;
+}
+
+.footer-content-list>li {
+    vertical-align: top;
+    display: inline-block;
+    min-width: 5.9375rem;
+}
+
+.footer-content-list>li.open-padding {
+    padding-bottom: .9375rem;
+}
+
+.footer-info-title {
+    margin: 0;
+    font-size: .875rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+}
+
+.footer-container .footer-info-title {
+    font-weight: 500;
+    color: #323232;
+}
+
+.footer-container .footer-category {
+    padding-bottom: 0.3125rem;
+    display: block;
+    position: relative;
+}
+
+.footer-container .footer-row .footer-content .footer-content-list>li span {
+    display: block;
+}
+
+.footer-text-middle {
+    margin: 0;
+    font-size: .875rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+}
+
+.company-container {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.company-content {
+    flex: 1;
+}
+
+.company-content-list{
+    line-height: 1.125rem;
+    padding-right: 6rem;
+    padding-bottom: 0.5rem;
+}
+
+.company-content-text {
+    margin: 0;
+    font-size: .75rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+    margin-right: 1.875rem;
+    font-weight: 500;
+}
+
+.company-intro {
+    margin: 0;
+    font-size: .75rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+    display: inline-block;
+    font-weight: 400;
+}
+
+.company-guide-text {
+    margin: 0;
+    font-size: .75rem;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #737373;
+}
+
+.company-guide li {
+    display: block;
+    padding: 0;
+    font-size: .75rem;
+}
+
+.badge-list {
+    padding-bottom: 2.5rem;
+}
+
+.footer-badge {
+    padding: 0 4px;
+}
+
+.footer-badge:first-child {
+    padding-left: 0;
+}
+
+@media (min-width: 576px) {
+    .footer-media-container {
+        max-width: 33.75rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-media-container {
+        max-width: 45rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer-media-container {
+        max-width: 60.5rem;
+    }
+}
+
+
+@media (max-width: 991.98px) {
+    .footer-container {
+        padding: 1.25rem 1.25rem 1.90625rem;
+    }
+
+    .footer-row {
+        text-align: center;
+    }
+
+    .footer-content {
+        margin-bottom: 1.25rem;
+    }
+
+    
+
+    .footer-row .right {
+        float: none;
+        display: block; 
+        position: relative;
+        right: 0;
+    }
+
+    .footer-content-list>li {
+        display: block;
+        border-bottom: 0.0625rem solid #e1e1e1;
+        padding-bottom: 0.9375rem
+    }
+
+    .footer-info-title {
+        width: 100%;
+        padding: 0.8125rem 0;
+        font-size: 1rem;
+    }
+    
+    .footer-category {
+        width: 100%;
+        padding: 0.8125rem 0;
+        font-size: 1rem;
+    }
+
+    .company-container {
+        display: block;
+    }
+
+    .company-content {
+        display: block;
+    }
+
+    .company-content-list {
+        padding-right: 0;
+        padding-bottom: 0;
+        margin: 1.25rem 0;
+    }
+}
+

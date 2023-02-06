@@ -421,3 +421,8 @@ button.btn-facebook span {
 .mobile-title-width {
     max-width: 100%;
 }
+
+input::placeholder {
+    font-weight: 500!important;
+    color: #c8c8c8!important;
+}
