@@ -63,7 +63,7 @@ CSS를 사용하는 이유
 -------------------------------------------------------------------------------------
 
 CSS 문법
-	<div style="display:flex; align-item:center">
+	<div align="center">
   	<p>     p {     text-align: center; color: blue; } </p>
         <p>    ===      ----------  ------  -----  ----    </p>
         <p>  [선택자]      속성명    속성값  속성명  속성값   </p>
